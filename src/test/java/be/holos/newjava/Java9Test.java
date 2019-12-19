@@ -7,17 +7,17 @@ import org.junit.Test;
  */
 public class Java9Test {
 
-    @Test
-    public void testNewHttpClient() {
-
-        final HttpRequest request = HttpRequest.newBuilder()
-                .uri(new URI("https://postman-echo.com/get"))
-                .GET()
-                .build();
-
-        final HttpResponse<String> response = HttpClient.newHttpClient()
-                .send(request, HttpResponse.BodyHandler.asString());
-    }
+    //    @Test
+    //    public void testNewHttpClient() {
+    //
+    //        final HttpRequest request = HttpRequest.newBuilder()
+    //                .uri(new URI("https://postman-echo.com/get"))
+    //                .GET()
+    //                .build();
+    //
+    //        final HttpResponse<String> response = HttpClient.newHttpClient()
+    //                .send(request, HttpResponse.BodyHandler.asString());
+    //    }
 
     @Test
     public void testVar() {
